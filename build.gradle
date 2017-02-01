@@ -1,0 +1,31 @@
+repositories {
+    //mavenLocal()
+    // if (project.hasProperty('repoPublicUrl')&&  project.hasProperty('repoUsername') && project.hasProperty('repoPassword')) {
+    //     maven {
+    //             url repoPublicUrl
+    //             credentials {
+    //                 username repoUsername
+    //                 password repoPassword
+    //             }
+    //         }
+    // }
+
+    jcenter()
+    // maven {
+    //     name "typesafe-maven-release"
+    //     url "https://repo.typesafe.com/typesafe/maven-releases"
+    // }
+    // ivy {
+    //     name "typesafe-ivy-release"
+    //     url "https://repo.typesafe.com/typesafe/ivy-releases"
+    //     layout "ivy"
+    // }
+}
+
+apply plugin: 'java'
+
+dependencies {
+//    compile 'org.terracotta:terracotta-toolkit-runtime-ee:4.1.6'
+    //compile 'org.terracotta:terracotta-toolkit-runtime-ee:4.1.1'
+    compile 'org.springframework:spring-context:3.2.9.RELEASE'
+}
